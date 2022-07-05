@@ -1,13 +1,19 @@
 #include <stdio.h>
-
 /**
- * main -print _putchar
+ * main - Print putchar
  *
- * Return:Always 0
+ * Return: Always 0
  */
-
 int main(void)
 {
-	_putchar("%s", "_putchar\n");
+	char *sh = "_putchar";
+
+	while (*sh)
+	{
+		putchar(*sh);
+		sh++;
+	}
+	putchar('\n');
+
 	return (0);
 }
