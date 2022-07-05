@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Print putchar
  *
@@ -6,14 +6,16 @@
  */
 int main(void)
 {
-	char *sh = "_putchar";
+	char string[8] = "_putchar";
+	int n = 0;
 
-	while (*sh)
+	while (n < 8)
 	{
-		putchar(*sh);
-		sh++;
+		_putchar(string[n]);
+		++n;
 	}
-	putchar('\n');
 
+	_putchar(10);
 	return (0);
+
 }
