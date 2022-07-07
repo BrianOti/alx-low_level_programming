@@ -1,17 +1,16 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _isupper - checks if letter is capitalised or not
- * @c: int representing a character
- * Return: 0
+ * _isupper - Check if paramter c represents an uppercase letter.
+ * @c: Int representing a character
+ * Return: Always 0.
  */
-
 int _isupper(int c)
 {
-	if (int isupper(c))
+	if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
 	return (0);
-}
+}i
