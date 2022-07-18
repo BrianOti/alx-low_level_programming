@@ -1,11 +1,11 @@
 #include "main.h"
 
-/*
- * _strchr - prints c that's been found
+/**
+ * _strchr - prints found c
  * @s: pointer to char
- * @c: char parameter to be found
- * Return: *s
- */
+ * @c: char params to found
+ * Return: *S
+*/
 
 char *_strchr(char *s, char c)
 {
