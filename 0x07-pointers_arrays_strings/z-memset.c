@@ -1,7 +1,7 @@
 #include "main.h"
 
-/**
- * _memset - ironnou
+/*
+ * _memset - fills memory with a constant byte
  * @s: pointer to char params
  * @b: data to change
  * @n: index
@@ -17,4 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 	return (s);
+
 }
