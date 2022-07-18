@@ -1,14 +1,25 @@
 #include "main.h"
 
 /*
- *
+ * _strchr - prints c that's been found
+ * @s: pointer to char
+ * @c: char parameter to be found
+ * Return: *s
  */
 
 char *_strchr(char *s, char c)
 {
-	if char *s == char c
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
+	}
+	if (*s == c)
 	{
 		return (s);
 	}
-	s++;
+return (0);
 }
