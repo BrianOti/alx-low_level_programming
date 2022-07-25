@@ -1,33 +1,49 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * _strdup - copy
- * @str: pointer to string
- * Return: pointer
+ *str_concat - concatenate strings
+ *@s1: string
+ *@s2: string
+ *
+ *Return: pointer
  */
 
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-	char *s;
-	int i = 0, j;
+int i, j, a = 0;
+char *c;
 
-	if (!str)
-		return (NULL);
+if (s1 == 0)
+s1 = "";
+if (s2 == 0)
+s2 = "";
 
-	while (*(str + i))
-		i++;
-	i++;
-	s = malloc(sizeof(char) * i);
+for (i = 0; i < s1[i]; i++)
+;
+for (j = 0; j < s2[j]; j++)
+;
+c = malloc((sizeof(char) * i) + (sizeof(char) * j) + 1);
 
-	if (s == NULL)
-	{
-		return (NULL);
-	}
+if (c == NULL)
+{
+return (NULL);
+}
+while (*s1 != '\0')
+{
+c[a] = *s1;
+s1++;
+a++;
+}
 
-	for (j = 0; j <= i; j++)
-	{
-		s[j] = str[j];
-	}
-	return (s);
+while (*s2 != '\0')
+{
+c[a] = *s2;
+s2++;
+a++;
+}
+c[a] = '\0';
+
+return (c);
 }
